@@ -19,6 +19,7 @@ import java.util.UUID;
 @Table(name = "user_roles")
 public class Role {
     @Id
+    @Column(name = "role_id")
     UUID id = UUID.randomUUID();
     @Column(unique = true, nullable = false)
     String name;
